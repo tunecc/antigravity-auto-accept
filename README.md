@@ -26,7 +26,7 @@
 ```nohup /Applications/Antigravity.app/Contents/MacOS/Electron --remote-debugging-port=9222 > /dev/null 2>&1 &``` 
 
 懒得弄得我也放在了我的release里面
-
+![](https://raw.githubusercontent.com/tunecc/antigravity-auto-accept/refs/heads/master/photo.png)
 # 修改最大 Retry 次数
 
 通过命令面板 (Cmd+Shift+P):
