@@ -35,7 +35,7 @@
         },
         "antigravity-auto-accept.retryMaxCount": {
           "type": "number",
-          "default": 10,
+          "default": 30,
           "description": "Maximum number of auto-retry attempts (0 = unlimited)"
         }
       }

@@ -5,7 +5,7 @@ let autoAcceptInterval = null;
 let enabled = true;
 let autoRetryEnabled = true;
 let cdpPort = 9222;
-let retryMaxCount = 10;
+let retryMaxCount = 30;
 let retryCurrentCount = 0;
 let statusBarItem;
 let retryStatusBarItem;
