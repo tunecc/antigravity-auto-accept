@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 
-
-# 此项目停止维护，推荐使用下面这个作者的
+# 此项目停止维护，推荐使用下面这个项目
 
 https://github.com/michaelbarrera21/auto-accept-agent
 
-
-=======
-# 大部分是翻译原作者的
->>>>>>> 0fa1019b8e1633bf6f242b8de85b04f982de1eaa
-
 # Antigravity Auto Accept
+
+## 下面大部分是翻译原作者的
 
 **终于实现了 (realized)  Antigravity Agent 的真正免提自动化。**
 
