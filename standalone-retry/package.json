@@ -1,0 +1,24 @@
+{
+  "name": "antigravity-auto-retry",
+  "version": "1.0.0",
+  "description": "Standalone Auto-Retry app for Antigravity IDE with system notifications and menubar",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg . --targets node18-macos-x64 --output dist/AntigravityAutoRetry"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/node-notifier/vendor/**"
+    ]
+  },
+  "dependencies": {
+    "ws": "^8.19.0",
+    "node-notifier": "^10.0.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
