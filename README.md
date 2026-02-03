@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # 此项目停止维护，推荐使用下面这个作者的
@@ -5,39 +6,42 @@
 https://github.com/michaelbarrera21/auto-accept-agent
 
 
+=======
+# 大部分是翻译原作者的
+>>>>>>> 0fa1019b8e1633bf6f242b8de85b04f982de1eaa
 
 # Antigravity Auto Accept
 
-**终于实现了 Antigravity Agent 的真正免提自动化。**
+**终于实现了 (realized)  Antigravity Agent 的真正免提自动化。**
 
-此扩展程序会自动接受 Antigravity Agent 的**所有**待处理步骤，并在出错时自动重试：
+此扩展 (extended) 程序会自动接受 Antigravity Agent 的**所有**待处理步骤 (step) ，并在出错时自动重试：
 
-* ✅ **运行命令 (Run Command)** 请求 (终端)
-* ✅ **保存文件 (Save File)** 请求
+* ✅ **运行命令 (command)  (Run Command)** 请求 (终端)
+* ✅ **保存文件 (file)  (Save File)** 请求
 * ✅ **代码编辑 (Code Edits)**
 * ✅ 代理出错时**自动重试 (Auto-Retry)** (通过 CDP)
 
-它绕过了外部脚本的限制，直接在 IDE 进程内部运行，即使窗口最小化或失去焦点，也能确保 100% 的可靠性。
+它绕过了外部脚本 (script) 的限制，直接在 IDE 进程内部运行，即使窗口最小化或失去焦点，也能确保 (ensure)  100% 的可靠性。
 
 ---
 # macOS启动([来自作者在论坛的回答](https://linux.do/t/topic/1500512/11))
 
 要配置下快捷启动（类似windows）
 
-使用Mac自带的 “自动操作” 增加一个应用程序 (application) ，使用shell的方式
+使用Mac自带的 “自动操作” 增加一个应用程序 (application)  (application) ，使用shell的方式
 
 1. 使用“自动操作”制作启动器
 打开 Automator (自动操作)
-点击左下角的 “新建文稿”，选择 “应用程序 (Application)”，然后点击“选取”。
-在左侧库的搜索框中输入 shell，找到 “运行 Shell 脚本 (Run Shell Script)” 动作，并将其拖入右侧工作区。
-在脚本框中输入以下命令（也可以在terminal里面直接使用下面的命令）：
+点击左下角的 “新建文稿”，选择 (select)  “应用程序 (Application)”，然后点击“选取”。
+在左侧库的搜索 (search) 框中输入 shell，找到 (find)  “运行 Shell 脚本 (Run Shell Script)” 动作，并将其拖入右侧工作区。
+在脚本 (script) 框中输入以下命令（也可以在terminal里面直接 (directly) 使用下面的命令 (command) ）：
 ```nohup /Applications/Antigravity.app/Contents/MacOS/Electron --remote-debugging-port=9222 > /dev/null 2>&1 &``` 
 
 懒得弄得我也放在了我的release里面
 ![](https://raw.githubusercontent.com/tunecc/antigravity-auto-accept/refs/heads/master/photo.png)
 # 修改最大 Retry 次数
 
-通过命令面板 (Cmd+Shift+P):
+通过 (by) 命令 (command) 面板 (Cmd+Shift+P):
 
 运行命令 Set Retry Max Count
 输入新的数值（0 = 无限次）
@@ -46,15 +50,15 @@ https://github.com/michaelbarrera21/auto-accept-agent
 
 ## 🚀 安装 (Installation)
 
-### 选项 1：从 VSIX 安装（推荐）
+### 选项 1：从 VSIX 安装 (installation) （推荐）
 
-1. 从 [Releases](https://github.com/EvanDbg/antigravity-auto-accept/releases) 下载最新的 `.vsix` 文件。
+1. 从 [Releases](https://github.com/EvanDbg/antigravity-auto-accept/releases) 下载最新的 `.vsix` 文件 (file) 。
 2. 打开 Antigravity IDE。
-3. 进入 **Extensions (扩展)** → 点击 `...` 菜单 → **Install from VSIX... (从 VSIX 安装)**。
-4. 选择下载的 `.vsix` 文件。
+3. 进入 (enter)  **Extensions (扩展 (extended) )** → 点击 `...` 菜单 → **Install from VSIX... (从 VSIX 安装)**。
+4. 选择 (select) 下载 (download) 的 `.vsix` 文件。
 5. 重启 IDE。
 
-### 选项 2：从源码构建 (Build from Source)
+### 选项 2：从源码构建 (build)  (Build from Source)
 
 ```bash
 git clone https://github.com/pesoszpesosz/antigravity-auto-accept.git
